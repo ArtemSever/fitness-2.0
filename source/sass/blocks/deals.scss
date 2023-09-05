@@ -1,0 +1,244 @@
+.deals__content-wrapper {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 135px 103px 117px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 768px;
+    padding: 103px 45px 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 320px;
+    padding: 68px 15px 31px;
+  }
+}
+
+.deals__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin: 14px 0 56px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    margin: 0 0 54px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin: 0 5px 50px 0;
+  }
+}
+
+.deals__container {
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.deals__bigger-banner {
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.deals__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: $color-default-white;
+  background-color: #ed0233;
+  padding: 39px 35px 35px;
+  max-width: 280px;
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.deals__text-inner-wrapper {
+  padding: 0 10px;
+}
+
+.deals__text {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.deals__number {
+  font-size: 70px;
+  line-height: 75px;
+  margin: 0;
+}
+
+.deals__description {
+  font-size: 18px;
+
+  @media (max-width: $mobile-width) {
+    margin: 12px 0 22px;
+  }
+}
+
+.deals__bigger-banner-button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  align-self: start;
+  padding: 10px;
+  margin-top: auto;
+  color: $color-default-white;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    padding: 10px;
+    border: 1px solid $color-default-white;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-width) {
+    line-height: normal;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+  }
+}
+
+.deals__image-wrapper img {
+  width: 280px;
+  height: 462px;
+  object-fit: cover;
+  background-color: $light-slate-grey;
+
+  @media (max-width: $tablet-width) {
+    width: 399px;
+    height: 462px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    height: 299px;
+    object-fit: fill;
+  }
+}
+
+.deals__list {
+  flex-grow: 1;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.deals__list-item {
+  display: flex;
+  flex-direction: column;
+  color: $resolution-blue;
+  min-height: 211px;
+  padding: 25px 18px;
+  margin-bottom: 40px;
+  border: 7px solid #d10a42;
+  border-image-slice: 1;
+  border-image-source: $primary-grdient;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    padding-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    text-align: center;
+    padding: 38px 28px 26px;
+    margin: 0;
+  }
+}
+
+.deals__item-text-wrapper {
+  padding: 0 10px;
+}
+
+.deals__item-title {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.deals__item-info {
+  margin-top: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.deals__item-button {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-top: auto;
+  padding: 9px 10px;
+  color: $resolution-blue;
+  text-decoration: underline;
+  text-transform: uppercase;
+  align-self: start;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border: 1px solid $Sapphire;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+  }
+}

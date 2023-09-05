@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/AlumniSans/AlumniSans-800.woff2") format("woff2"), url("../fonts/AlumniSans/AlumniSans-800.woff") format("woff");
+}
+
+@font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;

@@ -1,0 +1,196 @@
+.trainers__content-wrapper {
+  position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 103px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 804px;
+    padding: 108px 101px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 320px;
+    flex-direction: column;
+    padding: 63px 47px 70px;
+  }
+}
+
+.trainers__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  margin: 5px 0 69px 4px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin: 5px 0 45px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 51px;
+  }
+}
+
+.swiper {
+  position: relative;
+}
+
+.trainers__swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+}
+
+.trainers .swiper-wrapper .trainers-image {
+  background-color: rgba(16, 38, 84, 0.5);
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+    height: 294px;
+  }
+}
+
+
+.trainers__description {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: $color-default-white;
+  bottom: 23px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.trainers__slide-name {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.trainers__slide-profile {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b6bdcc;
+  margin-top: 0;
+}
+
+.trainers__slide-list {
+  display: none;
+  text-align: left;
+  padding-left: 49px;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+
+.trainers__slide-list-item {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  margin-left: 3px;
+  padding-left: 20px;
+
+  &::before {
+    position: absolute;
+    font-size: 33px;
+    left: 0;
+    content: "•";
+  }
+}
+
+.trainers__swiper-slide:hover .trainers__description {
+  top: 0;
+  bottom: 0;
+  padding: 52px 0 0;
+  background-color: $resolution-blue;
+  opacity: 0.89;
+}
+
+.trainers__swiper-slide:hover .trainers__slide-profile,
+.trainers__swiper-slide:hover .trainers__slide-list {
+  display: block;
+}
+
+.swiper-button-prev {
+  z-index: 1;
+}
+
+.swiper-button-next {
+  z-index: 1;
+}
+
+.trainers__swiper-slide img {
+  width: 264px;
+  height: 294px;
+
+  @media (max-width: $mobile-width) {
+    height: 274px;
+  }
+}
+
+//buttons swiper
+
+.trainers__swiper-button-prev,
+.trainers__swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 56px;
+  height: 56px;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $Sapphire;
+  }
+
+  &:active {
+    background-color: $Sapphire;
+  }
+
+  //   @media (max-width: $tablet-width) {
+  //     bottom: 234px;
+}
+
+.trainers__swiper-button-prev {
+  left: 29px;
+  bottom: 240px;
+}
+
+.trainers__swiper-button-icon--left {
+  margin-right: 4px;
+}
+
+.trainers__swiper-button-next {
+  transform: rotate(180deg);
+  right: 29px;
+  bottom: 240px;
+}
+
+.trainers__swiper-button-icon--right {
+  margin-right: 4px;
+}
+
+.trainers__swiper-button-icon--left,
+.trainers__swiper-button-icon--right {
+  stroke: $Sapphire;
+
+  &:active {
+    stroke: $color-default-white;
+  }
+}
