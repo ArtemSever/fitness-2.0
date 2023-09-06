@@ -47,7 +47,7 @@
   }
 }
 
-.gym__title {
+.gym__text-wrapper h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 600;
@@ -69,7 +69,7 @@
   }
 }
 
-.gym__subtitle {
+.gym__text-wrapper span {
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
@@ -86,7 +86,7 @@
   }
 }
 
-.gym__description {
+.gym__text-wrapper p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -102,7 +102,7 @@
   }
 }
 
-.gym__description--second {
+.gym__text-wrapper p:nth-child(4) {
   margin-top: 10px;
 
   @media (max-width: $tablet-width) {
