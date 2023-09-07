@@ -1891,7 +1891,7 @@ button {
   width: 355px;
 }
 
-.gym__title {
+.gym__text-wrapper h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 600;
@@ -1900,7 +1900,7 @@ button {
   margin-bottom: 25px;
 }
 
-.gym__subtitle {
+.gym__text-wrapper span {
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
@@ -1908,14 +1908,14 @@ button {
   margin-bottom: 43px;
 }
 
-.gym__description {
+.gym__text-wrapper p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   margin: 0;
 }
 
-.gym__description--second {
+.gym__text-wrapper p:nth-child(4) {
   margin-top: 10px;
 }
 
@@ -3516,24 +3516,24 @@ button {
     margin: 0;
   }
 
-  .gym__title {
+  .gym__text-wrapper h2 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-top: 13px;
     margin-bottom: 12px;
   }
 
-  .gym__subtitle {
+  .gym__text-wrapper span {
     line-height: 27px;
     margin-bottom: 34px;
   }
 
-  .gym__description {
+  .gym__text-wrapper p {
     display: inline-block;
     width: 504px;
   }
 
-  .gym__description--second {
+  .gym__text-wrapper p:nth-child(4) {
     display: none;
   }
 
@@ -4057,17 +4057,17 @@ button {
     padding: 0 15px;
   }
 
-  .gym__title {
+  .gym__text-wrapper h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
     margin-top: 0;
   }
 
-  .gym__subtitle {
+  .gym__text-wrapper span {
     margin-bottom: 24px;
   }
 
-  .gym__description {
+  .gym__text-wrapper p {
     width: 258px;
   }
 
