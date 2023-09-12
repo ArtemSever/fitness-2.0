@@ -759,23 +759,23 @@
       </div>
     </section>
     <section class="additional-info">
-      <div class="appointment-field">
-        <form class="appointment-field__form" id="appointmentForm" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="appointment-field" data-form-validate data-callback="callback">
+        <form class="appointment-field__form" id="appointmentForm" action="https://echo.htmlacademy.ru/" method="post" novalidate>
           <h3 class="appointment-field__form-title">Бесплатное занятие</h3>
           <fieldset class="appointment-field__form-group">
             <div class="appointment-field__form-group-wrapper">
-              <label class="appointment-field__form-label">
-                <span class="appointment-field__form-input-title visually-hidden">Имя</span>
-                <input type="text" id="nameInput" name="name" placeholder="Имя">
-                <span class="appointment-field__form-error-message">Поле не должно быть пустым!</span>
+              <label class="appointment-field__form-label appointment-field__form-label-name" data-validate-type="text" data-limitation="name"
+                     data-message-base="Поле обязательно к заполнению"
+                     data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <input type="text" id="nameInput" name="name" placeholder="Имя" required>
               </label>
-              <label class="appointment-field__form-label">
-                <span class="appointment-field__form-input-title visually-hidden">Телефон</span>
-                <input type="tel" id="phoneInput" name="tel" placeholder="Телефон">
-                <span class="appointment-field__form-error-message">Поле не должно быть пустым!</span>
+              <label class="appointment-field__form-label appointment-field__form-label-phone" data-validate-type="phone" data-on-input-validate
+                     data-message-base="Поле обязательно к заполнению"
+                     data-message-extra="Проверьте корректность заполнения поля" data-required data-phone-length="11">
+                <input type="tel" id="phoneInput" name="tel" placeholder="Телефон" required>
               </label>
             </div>
-            <button class="appointment-field__form-button" type="submit">отправить</button>
+            <button class="appointment-field__form-button" type="submit">Отправить</button>
           </fieldset>
         </form>
       </div>
