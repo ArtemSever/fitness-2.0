@@ -3273,7 +3273,7 @@ button {
   color: rgba(255, 255, 255, 0);
 }
 
-.appointment-field__form-button {
+.appointment-field__form button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -3285,12 +3285,6 @@ button {
   background-color: #102654;
   border: 3px solid #ffffff;
   cursor: pointer;
-}
-
-.appointment-field__form-button:hover,
-.appointment-field__form-button:focus {
-  color: #102654;
-  background-color: #ffffff;
 }
 
 [data-message-base="Поле обязательно к заполнению"],
@@ -4576,12 +4570,6 @@ button {
 
   .appointment-field__form-label:first-of-type {
     margin-bottom: 33px;
-  }
-
-  .appointment-field__form-button {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
   }
 
   .contacts {
