@@ -36,6 +36,7 @@ body {
 a {
   color: $color-default-black;
   text-decoration: none;
+  user-select: none;
 }
 
 img,

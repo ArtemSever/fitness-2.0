@@ -30,7 +30,6 @@ export const createNewSlider1 = () => {
 export const createNewSlider2 = () => {
   new Swiper('#swiper-reviews', {
     direction: 'horizontal',
-    autoHeight: true,
     loop: false,
     slidesPerView: 1,
     navigation: {

@@ -74,7 +74,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 36px;
+    margin-bottom: 5px;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
     gap: 0;
@@ -107,12 +107,13 @@
   box-sizing: border-box;
 
   &:hover {
-    border-color: $color-default-white;
+    border-bottom: 1px solid $color-default-white;
   }
 
   &:focus,
   &:active {
-    border: 1px solid $color-default-white;
+    outline: 1px solid $color-default-white;
+    border: none;
   }
 
   &:disabled {
@@ -134,7 +135,11 @@
   color: $color-transparent;
 }
 
-.appointment-field__form-button {
+.appointment-field__form input:disabled::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.appointment-field__form button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -147,16 +152,21 @@
   border: 3px solid $color-default-white;
   cursor: pointer;
 
-  &:hover,
   &:focus {
-    color: $Sapphire;
+    outline: 3px solid $color-default-white;
     background-color: $color-default-white;
+    color: #103aae;
   }
 
-  @media (max-width: $mobile-width) {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
+  &:hover {
+    outline: 3px solid $color-default-white;
+    background-color: $color-default-white;
+    color: #103aae;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $Sapphire;
   }
 }
 

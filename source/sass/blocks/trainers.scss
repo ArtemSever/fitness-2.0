@@ -6,14 +6,12 @@
   padding: 120px 103px;
 
   @media (max-width: $tablet-width) {
-    max-width: 804px;
-    padding: 108px 101px;
+    padding: 108px 101px 101px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 320px;
     flex-direction: column;
-    padding: 63px 47px 70px;
+    padding: 66px 47px 70px;
   }
 }
 
@@ -28,7 +26,7 @@
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
-    margin: 5px 0 45px 0;
+    margin: 5px 0 39px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -90,6 +88,10 @@
   padding-left: 49px;
   padding-right: 10px;
   margin-top: 30px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 27px;
+  }
 }
 
 .trainers__slide-list-item {
@@ -115,6 +117,11 @@
   padding: 52px 0 0;
   background-color: $resolution-blue;
   opacity: 0.89;
+  overflow-y: scroll;
+
+  @media (max-width: $mobile-width) {
+    padding: 43px 0 0;
+  }
 }
 
 .trainers__swiper-slide:hover .trainers__slide-profile,
@@ -131,11 +138,15 @@
 }
 
 .trainers__swiper-slide img {
-  width: 264px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: $tablet-width) {
+    min-height: 294px;
+  }
 
   @media (max-width: $mobile-width) {
-    height: 274px;
+    min-height: 274px;
   }
 }
 
@@ -169,19 +180,30 @@
 }
 
 .trainers__swiper-button-icon {
+  stroke: $Sapphire;
+
   @media (max-width: $mobile-width) {
     width: 10px;
     height: 19px;
   }
 }
 
+.trainers__swiper-button-prev:active > .trainers__swiper-button-icon,
+.trainers__swiper-button-next:active > .trainers__swiper-button-icon {
+  stroke: $color-default-white;
+}
+
 .trainers__swiper-button-prev {
-  left: 29px;
-  bottom: 240px;
+  left: 27px;
+  bottom: calc(50% - 75px);
+
+  @media (max-width: $tablet-width) {
+    bottom: calc(50% - 68px);
+  }
 
   @media (max-width: $mobile-width) {
-    left: 8px;
-    bottom: 192px;
+    left: 7px;
+    bottom: calc(50% - 53px);
   }
 }
 
@@ -191,24 +213,19 @@
 
 .trainers__swiper-button-next {
   transform: rotate(180deg);
-  right: 29px;
-  bottom: 240px;
+  right: 27px;
+  bottom: calc(50% - 75px);
+
+  @media (max-width: $tablet-width) {
+    bottom: calc(50% - 68px);
+  }
 
   @media (max-width: $mobile-width) {
-    right: 5px;
-    bottom: 192px;
+    right: 7px;
+    bottom: calc(50% - 53px);
   }
 }
 
 .trainers__swiper-button-icon--right {
   margin-right: 4px;
-}
-
-.trainers__swiper-button-icon--left,
-.trainers__swiper-button-icon--right {
-  stroke: $Sapphire;
-
-  &:active {
-    stroke: $color-default-white;
-  }
 }

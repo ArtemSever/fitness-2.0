@@ -1,18 +1,15 @@
 .reviews__content-wrapper {
   position: relative;
   max-width: 1366px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 120px 0;
 
   @media (max-width: $tablet-width) {
-    max-width: 768px;
     padding: 91px 0 100px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 320px;
-    padding: 70px 47px 71px;
+    padding: 85px 47px 71px;
   }
 }
 
@@ -37,33 +34,22 @@
 }
 
 .reviews__swiper {
-  position: relative;
-  width: 560px;
-
-  @media (max-width: $tablet-width) {
-    width: 566px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 226px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .reviews .reviews__swiper-slide {
   display: flex;
-  width: 560px;
-  height: 242px;
+  width: 100%;
+  min-height: 242px;
   padding: 55px 62px 57px;
   color: $color-default-white;
   background-color: #1c3374;
 
-  @media (max-width: $tablet-width) {
-    width: 566px;
-  }
-
   @media (max-width: $mobile-width) {
-    width: 226px;
-    height: 335px;
+    max-width: 560px;
     padding: 40px 23px 34px;
   }
 }
@@ -77,12 +63,11 @@
   width: 80px;
   height: 80px;
   margin-right: 0;
-  margin-top: 7px;
   border-radius: 50%;
 
   @media (max-width: $mobile-width) {
     position: absolute;
-    left: 41px;
+    left: 40px;
     width: 68px;
     height: 68px;
   }
@@ -115,6 +100,7 @@
 
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +108,6 @@
   width: 56px;
   height: 56px;
   border: none;
-  position: absolute;
   cursor: pointer;
   border-radius: 50%;
 
@@ -139,6 +124,15 @@
   &:active {
     background-color: $Sapphire;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.reviews__swiper-button-prev:active > .reviews__swiper-button-icon,
+.reviews__swiper-button-next:active > .reviews__swiper-button-icon {
+  stroke: $color-default-white;
 }
 
 .reviews__swiper-button-prev svg,
@@ -150,17 +144,15 @@
 }
 
 .reviews__swiper-button-prev {
-  left: 24%;
-  bottom: 213px;
+  left: calc(50% - 350px);
+  top: 54%;
 
   @media (max-width: $tablet-width) {
     left: 25px;
-    bottom: 195px;
   }
 
   @media (max-width: $mobile-width) {
     left: 9px;
-    bottom: 223px;
   }
 }
 
@@ -170,17 +162,15 @@
 
 .reviews__swiper-button-next {
   transform: rotate(180deg);
-  right: 24%;
-  bottom: 213px;
+  right: calc(50% - 350px);
+  top: 54%;
 
   @media (max-width: $tablet-width) {
     right: 25px;
-    bottom: 195px;
   }
 
   @media (max-width: $mobile-width) {
-    right: 5px;
-    bottom: 223px;
+    right: 7px;
   }
 }
 

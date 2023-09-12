@@ -22,14 +22,13 @@ window.addEventListener('DOMContentLoaded', () => {
   const video = document.querySelector('.gym__video');
   const image = document.querySelector('.gym__video-image');
 
-  if (playButton) {
-
+  if (playButton && video) {
     playButton.addEventListener('click', function () {
       playButton.style.display = 'none';
-      if (image && video) {
+      if (image) {
         image.style.display = 'none';
-        video.style.display = 'block';
       }
+      video.style.display = 'block';
     });
   }
 
