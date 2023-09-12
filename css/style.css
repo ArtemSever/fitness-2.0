@@ -2017,7 +2017,7 @@ button {
 
 .passes {
   position: relative;
-  padding: 120px 103px;
+  padding: 120px 0;
   background-color: #f8f9fc;
 }
 
@@ -2687,6 +2687,9 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: #ffffff;
   background-color: #ed0233;
   padding: 39px 35px 35px;
@@ -2723,7 +2726,6 @@ button {
   -ms-grid-row-align: start;
   align-self: start;
   padding: 10px;
-  margin-top: auto;
   color: #ffffff;
   text-decoration: underline;
 }
@@ -2733,8 +2735,9 @@ button {
 }
 
 .deals__bigger-banner-button:focus {
-  padding: 10px;
   border: 1px solid #ffffff;
+  padding: 9px;
+  outline: none;
   text-decoration: none;
 }
 
@@ -2811,7 +2814,9 @@ button {
 
 .deals__item-button:focus {
   border: 1px solid #102654;
+  outline: none;
   text-decoration: none;
+  padding: 8px 9px;
 }
 
 .deals__item-button:disabled {
@@ -2918,7 +2923,6 @@ button {
 
 .faq__accordion-button-circle {
   position: absolute;
-  top: 29%;
   right: 1px;
   width: 42px;
   height: 42px;
@@ -2998,7 +3002,8 @@ button {
 }
 
 .reviews__swiper {
-  max-width: 562px;
+  position: relative;
+  width: 560px;
 }
 
 .reviews .reviews__swiper-slide {
@@ -3074,7 +3079,7 @@ button {
 }
 
 .reviews__swiper-button-prev {
-  left: 328px;
+  left: 24%;
   bottom: 213px;
 }
 
@@ -3086,7 +3091,7 @@ button {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  right: 328px;
+  right: 24%;
   bottom: 213px;
 }
 
@@ -3125,7 +3130,7 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 417px;
+  width: 417px;
   margin-left: auto;
 }
 
@@ -3152,26 +3157,29 @@ button {
 }
 
 .appointment-field__form-group-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin-bottom: 26px;
 }
 
 .appointment-field__form-label {
-  position: relative;
-  display: inline-block;
-}
-
-.appointment-field__form-label:first-child {
-  margin-right: 30px;
+  display: block;
 }
 
 .appointment-field__form input {
+  display: block;
   font-size: 14px;
-  width: 190px;
+  width: 100%;
   padding: 3px 0 6px 0;
   color: #ffffff;
   background-color: #102654;
   border: none;
   border-bottom: 1px solid #74819c;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .appointment-field__form input:hover {
@@ -3456,6 +3464,13 @@ button {
     letter-spacing: 0.48px;
     margin-top: 38px;
     margin-bottom: 20px;
+  }
+
+  .header__container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 46px;
   }
 
   .header__intro-wrapper {
@@ -3818,11 +3833,14 @@ button {
     -ms-flex-direction: row;
     flex-direction: row;
     margin-right: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 40px;
   }
 
   .faq__tabs-button {
-    width: 162px;
+    width: 100%;
     margin-bottom: 0;
     margin-right: 10px;
   }
@@ -3842,12 +3860,30 @@ button {
 
   .reviews__content-wrapper {
     max-width: 768px;
-    padding: 91px 103px 100px;
+    padding: 91px 0 100px;
   }
 
   .reviews__title {
     font-size: 42px;
     margin: 12px 4px 54px 0;
+  }
+
+  .reviews__swiper {
+    width: 566px;
+  }
+
+  .reviews .reviews__swiper-slide {
+    width: 566px;
+  }
+
+  .reviews__swiper-button-prev {
+    left: 25px;
+    bottom: 195px;
+  }
+
+  .reviews__swiper-button-next {
+    right: 25px;
+    bottom: 195px;
   }
 
   .additional-info {
@@ -3863,7 +3899,7 @@ button {
   }
 
   .appointment-field__form {
-    max-width: 472px;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -3874,12 +3910,12 @@ button {
     margin: 0 0 34px 0;
   }
 
-  .appointment-field__form-label:first-child {
-    margin-right: 60px;
+  .appointment-field__form-group-wrapper {
+    gap: 60px;
   }
 
-  .appointment-field__form input {
-    width: 204px;
+  .appointment-field__form-label {
+    margin-right: 0;
   }
 
   .contacts {
@@ -4008,6 +4044,7 @@ button {
 
   .header__container {
     display: block;
+    margin-right: 0;
   }
 
   .header__intro-wrapper {
@@ -4037,7 +4074,7 @@ button {
     width: 100%;
     display: inline-block;
     text-align: center;
-    padding: 17px 29px;
+    padding: 16px 29px;
   }
 
   .header__image-wrapper {
@@ -4208,6 +4245,27 @@ button {
     height: 274px;
   }
 
+  .trainers__swiper-button-prev,
+  .trainers__swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .trainers__swiper-button-icon {
+    width: 10px;
+    height: 19px;
+  }
+
+  .trainers__swiper-button-prev {
+    left: 8px;
+    bottom: 192px;
+  }
+
+  .trainers__swiper-button-next {
+    right: 5px;
+    bottom: 192px;
+  }
+
   .advantages {
     margin-bottom: 30px;
   }
@@ -4336,7 +4394,7 @@ button {
   }
 
   .deals__item-info {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   .deals__item-button {
@@ -4356,6 +4414,9 @@ button {
   }
 
   .faq__tabs-list {
+    -webkit-box-pack: normal;
+    -ms-flex-pack: normal;
+    justify-content: normal;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 22px;
@@ -4416,6 +4477,10 @@ button {
     margin: 0 0 49px;
   }
 
+  .reviews__swiper {
+    width: 226px;
+  }
+
   .reviews .reviews__swiper-slide {
     width: 226px;
     height: 335px;
@@ -4438,6 +4503,28 @@ button {
     text-align: center;
   }
 
+  .reviews__swiper-button-prev,
+  .reviews__swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .reviews__swiper-button-prev svg,
+  .reviews__swiper-button-next svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .reviews__swiper-button-prev {
+    left: 9px;
+    bottom: 223px;
+  }
+
+  .reviews__swiper-button-next {
+    right: 5px;
+    bottom: 223px;
+  }
+
   .appointment-field {
     padding: 64px 15px 67px;
   }
@@ -4449,25 +4536,21 @@ button {
 
   .appointment-field__form-group-wrapper {
     margin-bottom: 36px;
-  }
-
-  .appointment-field__form-label {
-    display: inline-block;
-    margin-right: 0;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
   }
 
   .appointment-field__form-label:first-of-type {
     margin-bottom: 33px;
   }
 
-  .appointment-field__form input {
-    width: 290px;
-  }
-
   .appointment-field__form-button {
     padding-left: 0;
     padding-right: 0;
-    width: 290px;
+    width: 100%;
   }
 
   .contacts {
