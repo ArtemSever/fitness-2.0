@@ -105,8 +105,14 @@
 .header__container {
   display: flex;
 
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    margin-right: 46px;
+  }
+
   @media (max-width: $mobile-width) {
     display: block;
+    margin-right: 0;
   }
 }
 
@@ -209,7 +215,7 @@
     width: 100%;
     display: inline-block;
     text-align: center;
-    padding: 17px 29px;
+    padding: 16px 29px;
   }
 }
 

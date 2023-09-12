@@ -7,7 +7,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 768px;
-    padding: 91px 103px 100px;
+    padding: 91px 0 100px;
   }
 
   @media (max-width: $mobile-width) {
@@ -37,17 +37,29 @@
 }
 
 .reviews__swiper {
-  max-width: 562px;
+  position: relative;
+  width: 560px;
+
+  @media (max-width: $tablet-width) {
+    width: 566px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+  }
 }
 
 .reviews .reviews__swiper-slide {
-  // position: relative;
   display: flex;
   width: 560px;
   height: 242px;
   padding: 55px 62px 57px;
   color: $color-default-white;
   background-color: #1c3374;
+
+  @media (max-width: $tablet-width) {
+    width: 566px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 226px;
@@ -95,14 +107,11 @@
 .reviews__user-review {
   line-height: 22.4px;
   margin: 0;
-  // max-width: 328px;
 
   @media (max-width: $mobile-width) {
     text-align: center;
   }
 }
-
-// swiper buttons
 
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
@@ -117,6 +126,11 @@
   cursor: pointer;
   border-radius: 50%;
 
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 30px;
+  }
+
   &:hover,
   &:focus {
     border: 1px solid $Sapphire;
@@ -127,9 +141,27 @@
   }
 }
 
+.reviews__swiper-button-prev svg,
+.reviews__swiper-button-next svg {
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
 .reviews__swiper-button-prev {
-  left: 328px;
+  left: 24%;
   bottom: 213px;
+
+  @media (max-width: $tablet-width) {
+    left: 25px;
+    bottom: 195px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 9px;
+    bottom: 223px;
+  }
 }
 
 .reviews__swiper-button-icon--left {
@@ -138,8 +170,18 @@
 
 .reviews__swiper-button-next {
   transform: rotate(180deg);
-  right: 328px;
+  right: 24%;
   bottom: 213px;
+
+  @media (max-width: $tablet-width) {
+    right: 25px;
+    bottom: 195px;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: 5px;
+    bottom: 223px;
+  }
 }
 
 .reviews__swiper-button-icon--right {

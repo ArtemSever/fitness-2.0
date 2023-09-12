@@ -2,61 +2,25 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
-import Swiper from './vendor/swiper';
-
+import {Form} from './modules/form-validate/form';
+import {createNewSlider1, createNewSlider2} from './vendor/slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
+  createNewSlider1();
+  createNewSlider2();
   iosVhFix();
-
+  const form = new Form();
+  window.form = form;
+  form.init();
   // Modules
   // ---------------------------------
-
-  const trainersSwiper = new Swiper('#swiper-trainers', {
-    direction: 'horizontal',
-    autoHeight: true,
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 40,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 38,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
-    navigation: {
-      nextEl: '.trainers__swiper-button-next',
-      prevEl: '.trainers__swiper-button-prev',
-    },
-  });
-  window.trainersSwiper = trainersSwiper;
-
-  const reviewsSwiper = new Swiper('#swiper-reviews', {
-    direction: 'horizontal',
-    autoHeight: true,
-    loop: false,
-    slidesPerView: 1,
-    navigation: {
-      nextEl: '.reviews__swiper-button-next',
-      prevEl: '.reviews__swiper-button-prev',
-    },
-  });
-  window.reviewsSwiper = reviewsSwiper;
-
-  let playButton = document.querySelector('.gym__play-button-wrapper');
-  let video = document.querySelector('.gym__video');
-  let image = document.querySelector('.gym__video-image');
+  const playButton = document.querySelector('.gym__play-button-wrapper');
+  const video = document.querySelector('.gym__video');
+  const image = document.querySelector('.gym__video-image');
 
   if (playButton) {
 
@@ -69,8 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  let buyPassButton = document.getElementById('buyPassButton');
-  let passesBlock = document.getElementById('passesBlock');
+  const buyPassButton = document.getElementById('buyPassButton');
+  const passesBlock = document.getElementById('passesBlock');
 
   if (buyPassButton && passesBlock) {
     buyPassButton.addEventListener('click', function (event) {
@@ -79,8 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  let footerTrainer = document.getElementById('footerTrainer');
-  let trainersBlock = document.getElementById('trainersBlock');
+  const footerTrainer = document.getElementById('footerTrainer');
+  const trainersBlock = document.getElementById('trainersBlock');
 
   if (footerTrainer && trainersBlock) {
     footerTrainer.addEventListener('click', function (event) {
@@ -88,33 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
       trainersBlock.scrollIntoView({behavior: 'smooth'});
     });
   }
-
-  const form = document.getElementById('appointmentForm');
-  const nameInput = document.getElementById('nameInput');
-  const nameLabel = nameInput.parentElement;
-
-  const phoneInput = document.getElementById('phoneInput');
-  phoneInput.addEventListener('input', function (event) {
-    const input = event.target;
-    input.value = input.value.replace(/[^0-9\s]/g, '');
-  });
-  const phoneLabel = phoneInput.parentElement;
-
-  form.addEventListener('submit', function (event) {
-    if (nameInput.value === '') {
-      event.preventDefault();
-      nameLabel.classList.add('appointment-field__form-label--error');
-    } else {
-      nameLabel.classList.remove('appointment-field__form-label--error');
-    }
-
-    if (phoneInput.value === '') {
-      event.preventDefault();
-      phoneLabel.classList.add('appointment-field__form-label--error');
-    } else {
-      phoneLabel.classList.remove('appointment-field__form-label--error');
-    }
-  });
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

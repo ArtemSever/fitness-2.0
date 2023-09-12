@@ -17,11 +17,11 @@
 .appointment-field__form {
   display: flex;
   flex-direction: column;
-  max-width: 417px;
+  width: 417px;
   margin-left: auto;
 
   @media (max-width: $tablet-width) {
-    max-width: 472px;
+    width: 100%;
     margin-left: 0;
   }
 }
@@ -56,31 +56,31 @@
 }
 
 .appointment-field__form-group-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin-bottom: 26px;
+
+  @media (max-width: $tablet-width) {
+    gap: 60px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 36px;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
   }
 }
 
 .appointment-field__form-label {
-  position: relative;
-  display: inline-block;
-
-  &:first-child {
-    margin-right: 30px;
-  }
+  display: block;
 
   @media (max-width: $tablet-width) {
-    &:first-child {
-      margin-right: 60px;
-    }
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-width) {
-    display: inline-block;
-    margin-right: 0;
-
     &:first-of-type {
       margin-bottom: 33px;
     }
@@ -88,13 +88,15 @@
 }
 
 .appointment-field__form input {
+  display: block;
   font-size: 14px;
-  width: 190px;
+  width: 100%;
   padding: 3px 0 6px 0;
   color: $color-default-white;
   background-color: $Sapphire;
   border: none;
   border-bottom: 1px solid $light-slate-grey;
+  box-sizing: border-box;
 
   &:hover {
     border-color: $color-default-white;
@@ -103,14 +105,6 @@
   &:focus,
   &active {
     border: 1px solid $color-default-white;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 204px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 290px;
   }
 }
 
@@ -147,7 +141,7 @@
   @media (max-width: $mobile-width) {
     padding-left: 0;
     padding-right: 0;
-    width: 290px;
+    width: 100%;
   }
 }
 

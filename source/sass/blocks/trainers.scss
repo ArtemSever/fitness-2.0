@@ -139,7 +139,6 @@
   }
 }
 
-//buttons swiper
 
 .trainers__swiper-button-prev,
 .trainers__swiper-button-next {
@@ -163,13 +162,27 @@
     background-color: $Sapphire;
   }
 
-  //   @media (max-width: $tablet-width) {
-  //     bottom: 234px;
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.trainers__swiper-button-icon {
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .trainers__swiper-button-prev {
   left: 29px;
   bottom: 240px;
+
+  @media (max-width: $mobile-width) {
+    left: 8px;
+    bottom: 192px;
+  }
 }
 
 .trainers__swiper-button-icon--left {
@@ -180,6 +193,11 @@
   transform: rotate(180deg);
   right: 29px;
   bottom: 240px;
+
+  @media (max-width: $mobile-width) {
+    right: 5px;
+    bottom: 192px;
+  }
 }
 
 .trainers__swiper-button-icon--right {
