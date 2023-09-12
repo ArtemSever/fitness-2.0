@@ -76,7 +76,7 @@
             <source type="image/webp" srcset="img/video-picture.webp 1x, img/video-picture@2x.webp 2x">
             <img class="gym__video-image" src="img/video-picture.jpg" srcset="img/video-picture@2x.jpg" width="364" height="228" alt="Тренажерный зал.">
           </picture>
-          <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+          <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=IVB2TB86THjxJ2pV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
           <div class="gym__play-button-wrapper">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle opacity="0.2" cx="50" cy="50" r="49" stroke="url(#paint0_linear_82_466)" stroke-width="2"/>
@@ -759,10 +759,10 @@
       </div>
     </section>
     <section class="additional-info">
-      <div class="appointment-field" data-form-validate data-callback="callback">
+      <div class="appointment-field" data-form-validate data-callback="base">
         <form class="appointment-field__form" id="appointmentForm" action="https://echo.htmlacademy.ru/" method="post" novalidate>
           <h3 class="appointment-field__form-title">Бесплатное занятие</h3>
-          <fieldset class="appointment-field__form-group">
+          <div class="appointment-field__form-group">
             <div class="appointment-field__form-group-wrapper">
               <label class="appointment-field__form-label appointment-field__form-label-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <input type="text" id="nameInput" name="name" placeholder="Имя" required>
@@ -771,8 +771,8 @@
                 <input type="tel" id="phoneInput" name="tel" placeholder="Телефон" required>
               </label>
             </div>
-            <button class="appointment-field__form-button" type="submit">Отправить</button>
-          </fieldset>
+            <button type="submit">Отправить</button>
+          </div>
         </form>
       </div>
       <div class="contacts">

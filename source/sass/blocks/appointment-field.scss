@@ -134,7 +134,7 @@
   color: $color-transparent;
 }
 
-.appointment-field__form-button {
+.appointment-field__form button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -146,18 +146,6 @@
   background-color: $Sapphire;
   border: 3px solid $color-default-white;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    color: $Sapphire;
-    background-color: $color-default-white;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
 }
 
 [data-message-base="Поле обязательно к заполнению"],
