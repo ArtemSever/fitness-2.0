@@ -3144,6 +3144,7 @@ button {
 }
 
 .appointment-field__form-group {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3154,6 +3155,13 @@ button {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.appointment-field__form-group span {
+  position: absolute;
+  content: "";
+  top: 28px;
+  width: 300px;
 }
 
 .appointment-field__form-group-wrapper {
@@ -3187,27 +3195,56 @@ button {
 }
 
 .appointment-field__form input:focus,
-.appointment-field__form inputactive {
+.appointment-field__form input:active {
   border: 1px solid #ffffff;
 }
 
+.appointment-field__form input:disabled {
+  opacity: 0.4;
+}
+
 .appointment-field__form input::-webkit-input-placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
   color: #ffffff;
 }
 
 .appointment-field__form input::-moz-placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
   color: #ffffff;
 }
 
 .appointment-field__form input:-ms-input-placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
   color: #ffffff;
 }
 
 .appointment-field__form input::-ms-input-placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
   color: #ffffff;
 }
 
 .appointment-field__form input::placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
   color: #ffffff;
 }
 
@@ -3256,20 +3293,14 @@ button {
   background-color: #ffffff;
 }
 
-.appointment-field__form-error-message {
-  display: none;
-  position: absolute;
-  font-size: 14px;
-  line-height: 22px;
+[data-message-base="Поле обязательно к заполнению"],
+[data-message-extra="Проверьте корректность заполнения поля"] {
   color: #ff121f;
-}
-
-.appointment-field__form-label--error input {
-  border-color: #ff121f;
-}
-
-.appointment-field__form-label--error .appointment-field__form-error-message {
-  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .contacts {
