@@ -62,8 +62,8 @@
         <div class="gym__text-wrapper">
           <h2>Тренажерный зал</h2>
           <span>Просторный зал площадью 900 кв/м</span>
-          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          <p>Supergym&nbsp;— самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В&nbsp;зале расположены отдельная зона для Crossfit и &nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div class="gym__picture-container">
           <picture>
@@ -76,7 +76,7 @@
             <source type="image/webp" srcset="img/video-picture.webp 1x, img/video-picture@2x.webp 2x">
             <img class="gym__video-image" src="img/video-picture.jpg" srcset="img/video-picture@2x.jpg" width="364" height="228" alt="Тренажерный зал.">
           </picture>
-          <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=IVB2TB86THjxJ2pV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+          <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
           <div class="gym__play-button-wrapper">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle opacity="0.2" cx="50" cy="50" r="49" stroke="url(#paint0_linear_82_466)" stroke-width="2"/>
@@ -224,7 +224,7 @@
           <div class="passes__picture-container">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/freeweights.webp">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/freeweights-disk.webp 1x, img/freeweights-disk@2x.webp 2x">
+              <source type="image/webp" srcset="img/freeweights-disk.webp 1x, img/freeweights-disk@2x.webp 2x">
               <source media="(max-width: 1199px)" srcset="img/freeweights.png">
               <img class="passes__container-icon" src="img/freeweights-disk.png" srcset="img/freeweights-disk@2x.png" width="321" height="384" alt="Спортивный инструмент, блины.">
             </picture>
@@ -233,26 +233,32 @@
       </div>
     </section>
     <section class="promo">
-      <div class="promo__content-wrapper">
-        <div class="promo__text-wrapper">
-          <div class="promo__title-container">
-            <h2 class="promo__title">SUPER GAMES</h2>
-            <div class="promo__details">
-              <h5 class="promo__details-title">Дата</h5>
-              <div class="promo__details-container">
-                <span class="promo__details-number">7</span>
-                <span class="promo__details-text">Мартa 2019</span>
-              </div>
-              <h5 class="promo__details-title">Время</h5>
-              <div class="promo__details-container">
-                <span class="promo__details-number">12:00</span>
-              </div>
-            </div>
+      <div class="promo__text-block">
+        <div class="promo__text-container">
+          <h2 class="promo__title">SUPER GAMES</h2>
+          <div class="promo__details">
+            <h5 class="promo__details-title">Дата</h5>
+            <p class="promo__details-date">
+              <span class="promo__details-number">7</span>
+              <span class="promo__details-text">Мартa 2019</span>
+            </p>
           </div>
-          <span class="promo__description">Ежегодные соревнования по CrossFit</span>
-          <button class="promo__button">заполнить&nbsp;заявку</button>
+          <div class="promo__details">
+            <h5 class="promo__details-title">Время</h5>
+            <p class="promo__details-time">
+              <span class="promo__details-number">12:00</span>
+            </p>
+          </div>
         </div>
+        <span class="promo__description">Ежегодные соревнования по&nbsp;CrossFit</span>
+        <button class="promo__button">заполнить&nbsp;заявку</button>
+      </div>
+      <div class="promo__image-container">
         <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-pic-mobile.webp 1x, img/promo-pic-mobile@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 767px)" srcset="img/promo-pic-mobile.jpg 1x, img/promo-pic-mobile@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-pic-tablet.webp 1x, img/promo-pic-tablet@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 1199px)" srcset="img/promo-pic-tablet.jpg 1x, img/promo-pic-tablet@2x.jpg 2x">
           <source type="image/webp" srcset="img/promo-pic.webp 1x, img/promo-pic@2x.webp 2x">
           <img class="promo__image" src="img/promo-pic.jpg" srcset="img/promo-pic@2x.jpg" width="660" height="500" alt="Мужчина топлес">
         </picture>
@@ -454,41 +460,33 @@
       </div>
     </section>
     <section class="deals">
-      <div class="deals__content-wrapper">
-        <h2 class="deals__title">Акции</h2>
-        <div class="deals__container">
-          <div class="deals__bigger-banner">
-            <div class="deals__text-wrapper">
-              <div class="deals__text-inner-wrapper">
-                <span class="deals__text">Год</span>
-                <h3 class="deals__number">4999</h3>
-                <p class="deals__description">Безлимитный абонемент в тренажерный зал</p>
-              </div>
-              <a class="deals__bigger-banner-button" href="#">подробнее</a>
-            </div>
-            <div class="deals__image-wrapper">
-              <picture>
-                <source type="image/webp" srcset="img/deals-image.webp 1x, img/deals-image@2x.webp 2x">
-                <img class="deals__image" src="img/deals-image.jpg" srcset="img/deals-image@2x.jpg" width="280" height="462" alt="Спортивная девушка">
-              </picture>
-            </div>
+      <h2 class="deals__title">Акции</h2>
+      <div class="deals__wrapper">
+        <div class="hit-deals">
+          <div class="hit-deals__info">
+            <h3 class="hit-deals__subtitle">Год</h3>
+            <p class="hit-deals__price">4999</p>
+            <p class="hit-deals__description">Безлимитный абонемент в&nbsp;тренажерный зал</p>
+            <a class="hit-deals__link" href="#">подробнее</a>
           </div>
-          <ul class="deals__list">
-            <li class="deals__list-item">
-              <div class="deals__item-text-wrapper">
-                <h3 class="deals__item-title">Месяц бесплатно</h3>
-                <p class="deals__item-info">Приведи друга, получи<br>абонемент в подарок</p>
-              </div>
-              <a class="deals__item-button" href="#">подробнее</a>
-            </li>
-            <li class="deals__list-item">
-              <div class="deals__item-text-wrapper">
-                <h3 class="deals__item-title">Скидка 20%</h3>
-                <p class="deals__item-info">Корпоративный фитнес с&nbsp;командой</p>
-              </div>
-              <a class="deals__item-button" href="#">подробнее</a>
-            </li>
-          </ul>
+          <picture>
+            <source type="image/webp" media="(max-width: 766px)" srcset="img/deals-image-mobile.webp, img/deals-image-mobile@2x.webp 2x">
+            <source type="image/jpg" media="(max-width: 766px)" srcset="img/deals-image-mobile.jpg, img/deals-image-mobile@2x.jpg 2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/deals-image-tablet.webp, img/deals-image-tablet@2x.webp 2x">
+            <source type="image/jpg" media="(max-width: 1199px)" srcset="img/deals-image-tablet.jpg, img/deals-image-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/deals-image.webp, img/deals-image@2x.webp 2x">
+            <img src="img/deals-image.jpg" srcset="img/deals-image@2x.jpg" width="280" height="462" alt="Спортивная девушка">
+          </picture>
+        </div>
+        <div class="other-deals">
+          <h3 class="other-deals__subtitle">Месяц бесплатно</h3>
+          <p class="other-deals__description">Приведи друга, получи<br/>абонемент в подарок</p>
+          <a class="other-deals__link" href="#">подробнее</a>
+        </div>
+        <div class="other-deals">
+          <h3 class="other-deals__subtitle">Скидка 20%</h3>
+          <p class="other-deals__description">Корпоративный фитнес с командой</p>
+          <a class="other-deals__link" href="#">подробнее</a>
         </div>
       </div>
     </section>
@@ -513,14 +511,14 @@
           <div class="faq__tabs-content-container" data-tabs="content">
             <div class="faq__tabs-content-wrapper" id="tabpanel-1" data-tabs="element" role="tabpanel" aria-labelledby="tab-1">
               <div class="faq__accordion accordion" data-accordion="parent">
-                <div class="faq__accordion-element accordion__element is-active" data-accordion="element">
+                <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                           data-accordion="button">Как стать членом фитнес-центра?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                      <p class="faq__accordion-description">При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
                     </div>
                   </div>
                 </div>
@@ -531,29 +529,29 @@
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                      <p class="faq__accordion-description">При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
                     </div>
                   </div>
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Есть кулеры в центре? Предоставляются полотенца?
+                          data-accordion="button">Есть кулеры в&nbsp;центре? Предоставляются полотенца?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                      <p class="faq__accordion-description">При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
                     </div>
                   </div>
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Сколько тренеров работает в клубе и какова<br>их квалификация?
+                          data-accordion="button">Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                      <p class="faq__accordion-description">При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
                     </div>
                   </div>
                 </div>
@@ -561,9 +559,9 @@
             </div>
             <div class="faq__tabs-content-wrapper" id="tabpanel-2" data-tabs="element" role="tabpanel" aria-labelledby="tab-2">
               <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
-                <div class="faq__accordion-element accordion__element is-active" data-accordion="element">
+                <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Занятия с тренером входят в абонемент?
+                          data-accordion="button">Занятия с&nbsp;тренером входят в&nbsp;абонемент?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -585,7 +583,7 @@
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                          data-accordion="button">Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -596,7 +594,7 @@
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Что такое семейный доступ и доступ для друзей?
+                          data-accordion="button">Что такое семейный доступ и&nbsp;доступ для друзей?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -609,9 +607,9 @@
             </div>
             <div class="faq__tabs-content-wrapper" id="tabpanel-3" data-tabs="element" role="tabpanel" aria-labelledby="tab-3">
               <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
-                <div class="faq__accordion-element accordion__element is-active" data-accordion="element">
+                <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Предлагает ли клуб услуги по&nbsp;консультированию<br>по вопросам питания?
+                          data-accordion="button">Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -622,7 +620,7 @@
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button accordion__button btn btn--aquamarine"
-                          type="button" data-accordion="button">Проводятся ли в клубе<br>какие-либо&nbsp;мероприятия или&nbsp;соревнования?
+                          type="button" data-accordion="button">Проводятся ли в клубе какие-&nbsp;либо мероприятия или&nbsp;соревнования?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -633,7 +631,7 @@
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Можно ли приобрести в центре спортивное питание?
+                          data-accordion="button">Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -644,7 +642,7 @@
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
                   <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
-                          data-accordion="button">Есть ли в центре детская комната?
+                          data-accordion="button">Есть&nbsp;ли в&nbsp;центре детская комната?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -658,22 +656,22 @@
             <div class="faq__tabs-content-wrapper" id="tabpanel-4" data-tabs="element" role="tabpanel" aria-labelledby="tab-4">
               <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
-                  <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Есть в фитнес-центре дресс-код?
+                  <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Есть в&nbsp;фитнес-центре дресс-код?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
-                  <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Можно ли приводить с собой детей на тренировки?
+                  <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
@@ -683,17 +681,17 @@
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
                 <div class="faq__accordion-element accordion__element" data-accordion="element">
-                  <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Нужна ли медицинская справка для посещения залов и бассейна?
+                  <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?
                     <span class="faq__accordion-button-circle"></span>
                   </button>
                   <div class="faq__accordion-content accordion__content" data-accordion="content">
                     <div class="faq__accordion-wrapper accordion__wrapper">
-                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                      <p class="faq__accordion-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
@@ -776,30 +774,24 @@
         </form>
       </div>
       <div class="contacts">
-        <div class="contacts__content-wrapper">
-          <h3 class="contacts__title">Контакты</h3>
-          <ul class="contacts__list">
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">Адрес:</h4>
-              <p class="contacts__list-item-description">г. Омск, ул. 60 лет Октября, 7</p>
-            </li>
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">График работы:</h4>
-              <p class="contacts__list-item-description">Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">Телефон:</h4>
-              <p class="contacts__list-item-description">
-                <a class="contacts__list-item-tel" href="tel:+788005555555">8-800-555-55-55</a>
-              </p>
-            </li>
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">Email:</h4>
-              <p class="contacts__list-item-description">
-                <a class="contacts__list-item-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-              </p>
-            </li>
-          </ul>
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__wrapper">
+          <div class="contacts__block">
+            <h4 class="contacts__subtitle">Адрес:</h4>
+            <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
+          </div>
+          <div class="contacts__block contacts__block--phone">
+            <h4 class="contacts__subtitle">Телефон:</h4>
+            <a class="contacts__link" href="tel:+788005555555">8-800-555-55-55</a>
+          </div>
+          <div class="contacts__block">
+            <h4 class="contacts__subtitle">График работы:</h4>
+            <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          <div class="contacts__block">
+            <h4 class="contacts__subtitle">Email:</h4>
+            <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          </div>
         </div>
       </div>
     </section>
